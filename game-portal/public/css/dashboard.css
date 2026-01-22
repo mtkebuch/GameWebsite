@@ -1,0 +1,473 @@
+.dashboard-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.dashboard-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    letter-spacing: -1px;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, var(--primary-cyan), var(--primary-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.dashboard-subtitle {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.dashboard-sidebar {
+    position: sticky;
+    top: 100px;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.875rem 1.25rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(0, 247, 255, 0.4);
+    color: var(--primary-cyan);
+    transform: translateX(6px);
+}
+
+.nav-label {
+    flex: 1;
+}
+
+.nav-count {
+    padding: 0.25rem 0.75rem;
+    background: rgba(0, 247, 255, 0.15);
+    border-radius: 12px;
+    color: var(--primary-cyan);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+
+.stats-card {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+}
+
+.stats-card-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}
+
+.stat-mini {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 8px;
+}
+
+.stat-mini-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.25rem;
+}
+
+.stat-mini-label {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+.dashboard-content {
+    min-width: 0;
+}
+
+.content-section {
+    margin-bottom: 3.5rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.75rem;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.section-link {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.section-link:hover {
+    color: var(--primary-cyan);
+}
+
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.review-card-wrapper {
+    position: relative;
+}
+
+.review-card {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.review-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(0, 247, 255, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.review-thumb {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.review-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review-content {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.review-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 0.5rem 0;
+}
+
+.review-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.review-rating {
+    color: var(--primary-cyan);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.review-date {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.8rem;
+}
+
+.review-text {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.75rem;
+}
+
+.game-card-wrapper {
+    position: relative;
+}
+
+.game-card {
+    display: block;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.game-card:hover {
+    border-color: rgba(0, 247, 255, 0.3);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+.game-image {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.game-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.game-card:hover .game-image img {
+    transform: scale(1.08);
+}
+
+.game-info {
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.game-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.game-rating {
+    color: var(--primary-cyan);
+    font-weight: 700;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+
+.btn-remove {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(239, 68, 68, 0.9);
+    border: none;
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    opacity: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.game-card-wrapper:hover .btn-remove,
+.review-card-wrapper:hover .btn-remove {
+    opacity: 1;
+}
+
+.btn-remove:hover {
+    background: rgba(239, 68, 68, 1);
+    transform: scale(1.15);
+    box-shadow: 0 6px 16px rgba(239, 68, 68, 0.4);
+}
+
+.btn-remove i {
+    font-size: 0.875rem;
+}
+
+.remove-form {
+    margin: 0;
+}
+
+
+.empty-state-simple {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.empty-icon {
+    font-size: 4rem;
+    color: rgba(96, 165, 250, 0.3);
+    margin-bottom: 1.5rem;
+}
+
+.empty-state-simple h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.empty-state-simple p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 2rem;
+}
+
+
+@media (max-width: 1199.98px) {
+    .dashboard-layout {
+        grid-template-columns: 240px 1fr;
+        gap: 2rem;
+    }
+    
+    .games-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+
+@media (max-width: 991.98px) {
+    .dashboard-layout {
+        grid-template-columns: 220px 1fr;
+        gap: 1.5rem;
+    }
+    
+    .dashboard-title {
+        font-size: 2.25rem;
+    }
+    
+    .games-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 767.98px) {
+    .dashboard-header {
+        margin-bottom: 2rem;
+    }
+    
+    .dashboard-title {
+        font-size: 2rem;
+    }
+    
+    .dashboard-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .dashboard-sidebar {
+        position: static;
+    }
+    
+    .sidebar-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+    
+    .nav-item {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+        padding: 0.875rem 0.75rem;
+    }
+    
+    .stats-card {
+        display: none;
+    }
+    
+    .games-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    
+    .review-card {
+        flex-direction: column;
+    }
+    
+    .review-thumb {
+        width: 100%;
+        height: 200px;
+    }
+
+    .btn-remove {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar-nav {
+        grid-template-columns: 1fr;
+    }
+}
