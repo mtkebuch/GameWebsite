@@ -35,5 +35,5 @@ Access to an admin dashboard with statistics.
 1. **Clone the repository**
 bash
 
-git clone https://github.com/mtkebuch/games-portal.git
+git clone https://github.com/mtkebuch/GameWebsite.git
 cd games-portal
